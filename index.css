@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background:   url('music.png');
+    background-size: cover;
+    font-family: sans-serif;
+   
+}
+nav{
+    width: 100%;
+    height: 100px;
+   
+    display: flex;
+    justify-content: space-around;
+    color:#0b0b0c;
+    align-items: center;
+}
+.logo h1{
+    color: #771919;
+    text-shadow: purple;
+    text-decoration: wavy;
+    font-style: italic;
+    text-transform: unset;
+}
+.menu a:hover{
+    color: #540981;
+}
+.menu a{
+text-decoration: none;
+color:  rgb(230, 229, 233);;
+padding: 10px 20px;
+font-size: 20px;
+position: relative;
+
+}
+header nav{
+    background-color: rgb(18, 18, 90);
+}
+
+.menu a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    border-bottom: 2px solid #f0eff3;
+    transition: 0.4s linear;
+}
+.menu a:hover:before{
+    width: 70%;
+    
+}
+.register a{
+    text-decoration: none;
+    color: rgb(242, 239, 239);
+    padding: 10px 20px;
+    font-size: 20px;
+ background: #450981;  
+ border-radius: 8px;
+ margin-right: -60px;
+ 
+}
+.register a:hover{
+    background-color: rgb(230, 217, 32);
+    color: rgb(150, 26, 150);
+    font-family: 'Times New Roman', Times, serif;
+}
+.h-txt{
+    max-width: 650px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: rgb(12, 12, 78);
+
+}
+.h-txt span{
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+.h-txt h1{
+    font-size: 2.5em;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.h-txt h2{
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    margin-top: 10px;
+}
+.h-txt h3{
+    font-size: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+}
+   
+.h-txt a:hover{
+    background-color: rgb(173, 101, 55);
+    color: rgb(17, 15, 15);
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+footer .footer{
+    background-color: rgb(18,18,90);
+    height: 30vh;
+    width: 100%;
+}
+footer.contact{
+    color: white;
+    background-color: white;
+}
+.contact   {
+    display: flex;
+    justify-content: center;
+    
+}
+.contact a{
+    padding: 10px;
+    text-decoration: none;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+    margin-top: 40px;
+}
+.contact a li{
+    font-size: 2em;
+    opacity: 0.9;
+    color: black;
+}
+.contact a:hover{
+    background-color: #111;
+    transition: 0.5s;
+
+}
+.contact a :hover i{
+
+    color: white;
+    transition: 0.5s;
+}
+.footernav{
+    margin: 30px 0;
+}
+.footernav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.footernav ul li  a{
+    text-decoration: none;
+    color:  rgb(230, 229, 233);;
+    padding: 10px 20px;
+    font-size: 1.3em;
+    opacity: 0.5s;
+    margin: 20px;
+    }
+    .footernav ul li  a:hover{
+        opacity: 1;
+        text-decoration: underline;
+    }
+    .footerbottom{
+        background-color: #000;
+        text-align: center;
+        padding: 20px;
+    }
+    .footerbottom p{
+        color: white;
+    }
+    .designer{
+        opacity: 0.7;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 400px;
+        margin: 0px 5px;
+
+    }
+    @media (max-width:700px) {
+        .footernav ul{
+            flex-direction: column;
+        }
+        .footernav ul li{
+            width: 100%;
+            text-align: center;
+            margin: 10px;
+        }
+        
+    }
+   .logo img{
+    height: 90px;
+    margin-top: 10px;
+    margin-right: 199px;
+
+   }
